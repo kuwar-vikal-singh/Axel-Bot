@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black1"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bg_img"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:src="@drawable/logo"
+        android:layout_centerInParent="true"
+        app:tint="@color/black2"/>
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        >
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/logo_1"
+                app:tint="#BFFFFFFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins"
+                android:text="@string/app_name"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#FFFFFFBF"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginStart="@dimen/_2sdp"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_above="@id/lin"
+       android:layout_below="@id/top"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:clipToPadding="false" />
+
+    <LinearLayout
+        android:id="@+id/lin"
+android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ed_bg"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:id="@+id/messageInput"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="#5d5c5d"
+        android:hint="Message"
+        android:inputType="textMultiLine|textCapSentences"
+        android:maxLines="4"
+        android:scrollbars="vertical"
+        android:focusableInTouchMode="true"
+        android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            android:background="@android:color/transparent"
+         />
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:tint="@color/white"
+            android:src="@drawable/send"
+        android:contentDescription="Send"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            />
+
+
+
+
+
+        <!--        <ImageButton-->
+<!--            android:id="@+id/sendButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@android:drawable/ic_menu_send"-->
+<!--            android:contentDescription="Send" />-->
+    </LinearLayout>
+</RelativeLayout>

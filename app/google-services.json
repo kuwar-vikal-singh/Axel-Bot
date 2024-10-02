@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "876982296854",
+    "project_id": "axelai-59037",
+    "storage_bucket": "axelai-59037.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876982296854:android:d0d0920f68b9cccd457037",
+        "android_client_info": {
+          "package_name": "com.axel.axelai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx--iWp0PTtF2XCAO_7Vh3TkVC7vkszxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

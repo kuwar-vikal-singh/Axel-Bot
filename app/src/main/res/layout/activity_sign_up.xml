@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Ui.SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_35sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                app:tint="@color/white"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:fontFamily="@font/poppins"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:background="@drawable/ed_bg"
+                android:padding="10dp"
+                android:hint="Name"
+                android:textSize="@dimen/_12sdp"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:background="@drawable/ed_bg"
+                android:padding="10dp"
+                android:hint="Email"
+                android:textSize="@dimen/_12sdp"
+                android:textColorHint="@color/white"/>
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/white"
+                android:background="@drawable/ed_bg"
+                android:padding="10dp"
+                android:hint="Password"
+                android:drawableRight="@drawable/visibility_off"
+                android:drawableTint="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:textColorHint="@color/white"/>
+
+            <TextView
+                android:id="@+id/loginText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already have an account? Login"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/poppins"
+                android:gravity="right"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:textColor="@color/Blue"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/signupButton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:textColor="@color/black1"
+                android:text="Sign Up"
+                android:textSize="@dimen/_11sdp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:background="@drawable/btn_bg"
+                android:layout_margin="@dimen/_15sdp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+            android:layout_marginTop="@dimen/_15sdp"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
